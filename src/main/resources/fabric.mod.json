@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "jimmymod",
+	"version": "${version}",
+	"name": "Jimmy Mod",
+	"description": "haha nuclear bomb go brrr",
+	"authors": [
+		"Jimmy!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/jimmymod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jimmy.jimmymod.JimmyMod"
+		],
+		"client": [
+			"net.jimmy.jimmymod.JimmyModClient"
+		],
+		"fabric-datagen": [
+			"net.jimmy.jimmymod.JimmyModDataGenerator"
+		]
+	},
+	"mixins": [
+		"jimmymod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.1",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
